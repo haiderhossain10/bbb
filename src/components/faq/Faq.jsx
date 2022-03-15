@@ -3,7 +3,7 @@ import React from "react";
 function Faq() {
     return (
         <>
-            <section className="faq-box">
+            <section className="faq-box" id="faq">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-6">

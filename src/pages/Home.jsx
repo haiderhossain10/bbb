@@ -121,6 +121,7 @@ function Home() {
                 <section
                     className="banner-box"
                     style={{ backgroundImage: `url(${BannerImg})` }}
+                    id="home"
                 >
                     <div className="container">
                         <div className="row justify-content-center">
@@ -203,7 +204,7 @@ function Home() {
                 {/* counter section end */}
 
                 {/* our story section start */}
-                <section className="story-box">
+                <section className="story-box" id="about">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 order-2 order-lg-1">
@@ -394,7 +395,7 @@ function Home() {
                 {/* generate section end */}
 
                 {/* roadmap section start */}
-                <section className="roadmap-box">
+                <section className="roadmap-box" id="road-map">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-6">

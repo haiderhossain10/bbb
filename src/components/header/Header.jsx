@@ -22,10 +22,10 @@ function Header() {
                         <div className="col-lg-5">
                             <div className="header-nav header-left">
                                 <nav className="d-flex align-items-center">
-                                    <a href="#">Home</a>
-                                    <a href="#">About us</a>
-                                    <a href="#">Benefit & Utilities</a>
-                                    <a href="#">FAQ’s</a>
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About us</a>
+                                    <a href="#benefit">Benefit & Utilities</a>
+                                    <a href="#faq">FAQ’s</a>
                                 </nav>
                             </div>
                         </div>
@@ -38,8 +38,10 @@ function Header() {
                             <div className="header-nav header-right">
                                 <nav className="d-flex align-items-center justify-content-end">
                                     <a href="#">Collection</a>
-                                    <a href="#">Road Map</a>
-                                    <UiBorderButton>Contact</UiBorderButton>
+                                    <a href="#road-map">Road Map</a>
+                                    <a href="#contact">
+                                        <UiBorderButton>Contact</UiBorderButton>
+                                    </a>
                                     <UiButton>Connect Wallet</UiButton>
                                 </nav>
                             </div>

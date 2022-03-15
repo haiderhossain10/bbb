@@ -5,7 +5,7 @@ import DiscordBg from "../../assets/img/discord-bg.png";
 function Discord() {
     return (
         <>
-            <section className="discord-box">
+            <section className="discord-box" id="contact">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
