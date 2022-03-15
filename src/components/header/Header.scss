@@ -83,7 +83,7 @@
 }
 
 .header-mobile-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,7 +104,7 @@
             transition: all .3s;
 
             &:hover {
-                color: #F1F151 ;
+                color: #F1F151;
             }
         }
 

@@ -74,13 +74,15 @@ function Header() {
                 {isActiveBar && (
                     <div className="header-mobile-nav">
                         <div className="header-mobile-menu">
-                            <a href="#">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Benefit & Utilities</a>
-                            <a href="#">FAQ’s</a>
-                            <a href="#">Collection</a>
-                            <a href="#">Road Map</a>
-                            <UiBorderButton>Contact</UiBorderButton>
+                            <a href="#home">Home</a>
+                            <a href="#about">About us</a>
+                            <a href="#benefit">Benefit & Utilities</a>
+                            <a href="#faq">FAQ’s</a>
+                            <a href="#collection">Collection</a>
+                            <a href="#road-map">Road Map</a>
+                            <a href="#contact">
+                                <UiBorderButton>Contact</UiBorderButton>
+                            </a>
                         </div>
                         <div
                             className="header-mobile-cross"

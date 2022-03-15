@@ -393,7 +393,7 @@
 
 .road-map-border {
     position: relative;
-    z-index: 9;
+    // z-index: 9;
 
     .roadmap-bg {
         position: absolute;
@@ -799,6 +799,8 @@
 /* discord section start */
 .discord-box {
     padding-bottom: 140px;
+    position: relative;
+    z-index: -9;
 }
 
 .discord-content {
