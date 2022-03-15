@@ -1,0 +1,562 @@
+@media all and (max-width: 800px) {
+
+    /* header nav start */
+    .header-container {
+        display: none !important;
+    }
+
+    .header-mobile-box {
+        display: block;
+    }
+
+    /* header nav end */
+
+    /* banner section start */
+    .banner-box {
+        height: 524px;
+        background-image: url('../img/mobile-banner-bg.png') !important;
+    }
+
+    .banner-content {
+        padding-top: 117px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        h2 {
+            font-size: 26px;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 12px;
+            padding: 0;
+            line-height: 18px;
+        }
+
+        button {
+            font-size: 12px;
+            height: 35px;
+            padding: 0 2rem;
+        }
+    }
+
+    .banner-right-img {
+        right: 8px;
+        width: 160px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .banner-left-img {
+        left: 8px;
+        width: 160px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    /* banner section end */
+
+    /* counter section star */
+    .counter-box {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .counter-content {
+        p {
+            font-size: 400;
+            font-size: 6px;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+
+    /* counter section end */
+
+    /* our story section start */
+    .story-left {
+        img {
+            width: 100% !important;
+        }
+    }
+
+    .story-left-icon {
+        left: 0;
+        top: 0;
+
+        img {
+            width: 110%;
+        }
+    }
+
+    .story-box {
+        padding: 70px 0;
+    }
+
+    .story-right {
+        padding-left: 0;
+
+        p {
+            &:first-of-type {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            &:last-of-type {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        ul {
+            li {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        button {
+            height: 35px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    /* our story section end */
+
+    /* about mission section start */
+    .mission-box {
+        padding: 50px 0;
+    }
+
+    .mission-left {
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 8px 0;
+        }
+
+        p {
+            &:first-of-type {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            &:last-of-type {
+                font-size: 12px;
+                line-height: 18px;
+
+                margin-bottom: 20px;
+            }
+        }
+
+        button {
+            height: 35px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .mission-right-overlay {
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px;
+        width: 231px;
+
+        img {
+            height: 52.26px;
+        }
+
+        h4 {
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 8px;
+            line-height: 12px;
+        }
+    }
+
+    /* about mission section end */
+
+    /* generate section start */
+    .generate-head {
+        p {
+            &:first-of-type {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            &:last-of-type {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .generate-mint {
+        ul {
+            margin-top: 2rem;
+        }
+
+        button {
+            height: 35px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    /* generate section end */
+
+    /* roadmap section start */
+    .roadmap-box {
+        padding: 70px 0;
+    }
+
+    .roadmap-head {
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .roadmap-bg {
+        display: none;
+    }
+
+    .roadmap-content-box {
+        width: 287px;
+        height: auto;
+        padding: 20px;
+        margin: 54px 0;
+
+        h4 {
+            font-size: 14px;
+            line-height: 28px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+    }
+
+    .roadmap-mobile-bg {
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -9;
+    }
+
+    /* roadmap section end */
+
+    /* read doc section start */
+    .doc-content {
+        padding: 20px;
+        border-radius: 10px
+    }
+
+    .doc-left-content {
+        p {
+            &:first-of-type {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 14px 0;
+        }
+
+        button {
+            height: 35px;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 14px;
+        }
+    }
+
+    .doc-right-content {
+        flex-direction: row !important;
+        gap: 8px;
+        width: auto;
+
+        ul {
+            align-items: flex-start !important;
+            margin-top: 20px;
+
+            li {
+                gap: 6px;
+                align-items: flex-start;
+
+                img {
+                    height: 12px;
+                    width: 12px;
+                    object-fit: contain;
+                }
+
+                font-size: 8px;
+                line-height: 12px;
+            }
+        }
+    }
+
+    .doc-box {
+        padding-bottom: 70px;
+    }
+
+    /* read doc section end */
+
+    /* difference section start */
+    .difference-box {
+        padding-bottom: 70px;
+    }
+
+    .difference-head {
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    /* difference section end */
+
+    /* news section start */
+    .news-box {
+        padding-bottom: 70px;
+    }
+
+    .news-head {
+        padding-bottom: 20px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .news-card-img {
+        height: 90px;
+
+        span {
+            width: 41px;
+            height: 20px;
+            line-height: 20px !important;
+            font-size: 8px;
+            line-height: 12px;
+            left: unset;
+            right: 18px;
+        }
+    }
+
+    .news-content {
+        h4 {
+            font-size: 10px;
+            line-height: 15px;
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 8px;
+            line-height: 12px;
+            padding: 10px 0;
+        }
+    }
+
+    .news-card {
+        border-radius: 8px;
+
+        ul {
+            flex-direction: column !important;
+            align-items: unset !important;
+            padding: 10px 18px;
+
+            li {
+                font-size: 8px;
+            }
+        }
+    }
+
+    .news-btn {
+
+        button {
+            height: 36px;
+            font-size: 10px;
+        }
+    }
+
+    /* news section end */
+
+    /* faq section start */
+    .faq-box {
+        padding-bottom: 70px;
+    }
+
+    .faq-head {
+        padding-bottom: 20px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px
+        }
+    }
+
+    .faq-accordion {
+        .accordion-button {
+            font-size: 10px;
+            line-height: 15px;
+            height: 42px;
+
+            &::after {
+                width: 8px;
+            }
+        }
+
+        .accordion-body {
+            p {
+                font-size: 8px;
+                line-height: 12px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    /* faq section end */
+
+    /* discord section start */
+    .discord-box {
+        padding-bottom: 70px;
+    }
+
+    .discord-content {
+        padding: 20px 0;
+        border-radius: 10px;
+
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        h2 {
+            font-size: 16px;
+            line-height: 30px;
+            padding-top: 6px;
+            padding-bottom: 27px;
+        }
+
+        button {
+            height: 36px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    /* discord section end */
+
+    /* footer section start */
+    .footer-content {
+        >svg {
+            height: 50px;
+            width: 50px;
+        }
+
+        p {
+
+            &:first-of-type {
+                padding: 30px 0;
+            }
+
+            &:last-of-type {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .footer-input {
+        width: 100%;
+        height: 39px;
+
+        input {
+            font-size: 12px;
+        }
+
+        button {
+            height: 100%;
+            font-size: 12px;
+            line-height: 18px;
+            width: 102px;
+        }
+    }
+
+    .footer-social {
+        padding: 17px 0;
+    }
+
+    .footer-bg {
+        padding: 30px 0 17px 0;
+    }
+
+    /* footer section end */
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+    /* header nav start */
+    .header-container {
+        display: none !important;
+    }
+
+    .header-mobile-box {
+        display: block;
+    }
+}
+
+@media (min-width: 1201) and (max-width: 1520px) {
+
+    /* header nav start */
+    .header-container {
+        display: none !important;
+    }
+
+    .header-mobile-box {
+        display: block;
+    }
+}
