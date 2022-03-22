@@ -4,6 +4,8 @@ import UiButton from "../button/UiButton";
 import Logo from "./../../assets/img/logo.png";
 import "./Header.scss";
 import { ImCross } from "react-icons/im";
+import { FaDiscord, FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Header() {
     const [isActiveBar, setActiveBar] = useState(false);
@@ -19,30 +21,41 @@ function Header() {
             <header className="header-container-w header-container d-flex align-items-center">
                 <div className="w-100">
                     <div className="row align-items-center">
-                        <div className="col-lg-5">
+                        <div className="col">
                             <div className="header-nav header-left">
-                                <nav className="d-flex align-items-center">
+                                <nav className="d-flex align-items-center justify-content-end">
                                     <a href="#home">Home</a>
-                                    <a href="#about">About us</a>
-                                    <a href="#benefit">Benefit & Utilities</a>
-                                    <a href="#faq">FAQ’s</a>
+                                    <a href="#about">Story</a>
+                                    <a href="#road-map">Road Map</a>
                                 </nav>
                             </div>
                         </div>
                         <div className="col-lg-1 d-flex justify-content-center">
-                            <div className="header-logo">
-                                <img src={Logo} alt="logo" />
-                            </div>
+                            <Link to="/">
+                                <div className="header-logo">
+                                    <img src={Logo} alt="logo" />
+                                </div>
+                            </Link>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col">
                             <div className="header-nav header-right">
-                                <nav className="d-flex align-items-center justify-content-end">
-                                    <a href="#">Collection</a>
-                                    <a href="#road-map">Road Map</a>
-                                    <a href="#contact">
-                                        <UiBorderButton>Contact</UiBorderButton>
+                                <nav className="d-flex align-items-center justify-content-start">
+                                    <a href="#faq">FAQ’s</a>
+                                    <a href="#faq">Meet The Team</a>
+                                </nav>
+                                <nav className="d-flex align-items-center justify-content-start header-icon">
+                                    <a href="#">
+                                        <FaDiscord />
                                     </a>
-                                    <UiButton>Connect Wallet</UiButton>
+                                    <a href="#">
+                                        <FaTwitter />
+                                    </a>
+                                    <a href="#">
+                                        <FaInstagram />
+                                    </a>
+                                    <a href="#">
+                                        <FaFacebookF />
+                                    </a>
                                 </nav>
                             </div>
                         </div>
@@ -56,9 +69,6 @@ function Header() {
                         <div className="col-lg-12 d-flex justify-content-between align-items-center">
                             <div className="header-mobile-logo">
                                 <img src={Logo} alt="Mobile Logo" />
-                            </div>
-                            <div className="header-mobile-wallet">
-                                <UiButton>Connect Wallet</UiButton>
                             </div>
                             <div
                                 className="header-mobile-handburger"
@@ -75,14 +85,10 @@ function Header() {
                     <div className="header-mobile-nav">
                         <div className="header-mobile-menu">
                             <a href="#home">Home</a>
-                            <a href="#about">About us</a>
-                            <a href="#benefit">Benefit & Utilities</a>
-                            <a href="#faq">FAQ’s</a>
-                            <a href="#collection">Collection</a>
+                            <a href="#about">Story</a>
                             <a href="#road-map">Road Map</a>
-                            <a href="#contact">
-                                <UiBorderButton>Contact</UiBorderButton>
-                            </a>
+                            <a href="#faq">FAQ’s</a>
+                            <a href="#faq">Meet The Team</a>
                         </div>
                         <div
                             className="header-mobile-cross"
@@ -94,7 +100,7 @@ function Header() {
                 )}
             </header>
 
-            {/* header nav end */}
+            {/* header nav end*/}
         </>
     );
 }

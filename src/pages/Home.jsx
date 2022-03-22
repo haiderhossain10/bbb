@@ -6,7 +6,6 @@ import BannerLeft from "./../assets/img/banner-left-img.png";
 import BannerRight from "./../assets/img/banner-right-img.png";
 import StoryCircle from "./../assets/img/our-story-circle.png";
 import StoryIcon from "./../assets/img/our-story-icon.png";
-import MissionImg from "./../assets/img/mission.png";
 import MissionOverlay from "./../assets/img/mission-overlay.png";
 import GenerateImg1 from "./../assets/img/slide-img/slide-img-1.png";
 import GenerateImg2 from "./../assets/img/slide-img/slide-img-2.png";
@@ -29,6 +28,8 @@ import News from "../components/news/News";
 import Faq from "../components/faq/Faq";
 import Discord from "../components/discord/Discord";
 import { Timeline } from "gsap/gsap-core";
+import Story from "../components/story/Story";
+import Mission from "../components/mission/Mission";
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
@@ -76,6 +77,7 @@ function Home() {
             },
         ],
     };
+
     useEffect(() => {
         gsap.from(storyIconRef.current, {
             y: 30,
@@ -103,13 +105,19 @@ function Home() {
             .from("#banner-2", {
                 y: 50,
                 opacity: 0,
-                delay: 0.2,
+                delay: 0.1,
                 ease: "power.out",
             })
             .from("#banner-3", {
                 y: 50,
                 opacity: 0,
-                delay: 0.2,
+                delay: 0.1,
+                ease: "power.out",
+            })
+            .from("#banner-4", {
+                y: 50,
+                opacity: 0,
+                delay: 0.1,
                 ease: "power.out",
             });
     }, []);
@@ -128,16 +136,26 @@ function Home() {
                             <div className="col-lg-11">
                                 <div className="banner-content text-center">
                                     <h2 id="banner-1">
-                                        BBB is a collection of 10,000 war hero
-                                        NFTs fighting for peace in the Metaverse
+                                        Bread Basket Battalion
                                     </h2>
                                     <p id="banner-2">
-                                        The “Breadbasket of Europe” is what
-                                        Ukraine has been nicknamed to due to the
-                                        country's vast farmland and high
-                                        production of crops.
+                                        Leveraging the unique power of NFTs to
+                                        bring awareness of the suffering and
+                                        humanitarian aid to the Ukrainian
+                                        people.
                                     </p>
-                                    <div id="banner-3">
+                                    <p id="banner-3">
+                                        A humanitarian NFT collection of 10,000
+                                        ERC-721 Ukrainian soldiers fighting for
+                                        peace in the metaverse.
+                                    </p>
+                                    <div
+                                        id="banner-4"
+                                        className="d-flex flex-wrap gap-2 justify-content-center"
+                                    >
+                                        <a className="header-twitter" href="#">
+                                            Twitter
+                                        </a>
                                         <UiButton>Discover Now</UiButton>
                                     </div>
                                 </div>
@@ -152,163 +170,6 @@ function Home() {
                     </div>
                 </section>
                 {/* banner section end */}
-
-                {/* counter section start */}
-                <section className="counter-box d-flex align-items-center">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col px-0">
-                                <div className="counter-content text-center">
-                                    <p>Trees Planted</p>
-                                    <h2>
-                                        <span>
-                                            <CountUp start={0} end={564} />
-                                        </span>
-                                        +
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="col px-0">
-                                <div className="counter-content text-center">
-                                    <p>Tonnes CO² Removed</p>
-                                    <h2>
-                                        <span>
-                                            <CountUp start={0} end={56} />
-                                        </span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="col px-0">
-                                <div className="counter-content text-center">
-                                    <p>NFT's Offset</p>
-                                    <h2>
-                                        <span>
-                                            <CountUp start={0} end={549} />
-                                        </span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="col px-0">
-                                <div className="counter-content text-center">
-                                    <p>Trees Planted</p>
-                                    <h2>
-                                        <span>
-                                            <CountUp start={0} end={85} />
-                                        </span>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* counter section end */}
-
-                {/* our story section start */}
-                <section className="story-box" id="about">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 order-2 order-lg-1">
-                                <div className="story-left">
-                                    <img
-                                        ref={storyImgRef}
-                                        src={StoryCircle}
-                                        alt="Story Circle"
-                                        className="img-fluid"
-                                    />
-                                    <div
-                                        ref={storyIconRef}
-                                        className="story-left-icon"
-                                    >
-                                        <img
-                                            src={StoryIcon}
-                                            alt="Circle Icon"
-                                            className="img-fluid"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6  mb-5 mb-lg-0 order-1 order-lg-2">
-                                <div className="story-right">
-                                    <p>OUR STORY</p>
-                                    <h2>Another Reason to Join The Club</h2>
-                                    <p>
-                                        In its essence, BBB is a charity NFT.
-                                        The creators and developers (devs) will
-                                        be donating 50% of the profits generated
-                                        by the project to a charity that is
-                                        properly vetted and benefiting the
-                                        people of Ukraine.
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            Each DaFeis is priced at ETH 0.033.
-                                        </li>
-                                        <li>
-                                            Every DaFeis is generated from 323
-                                            possible traits.
-                                        </li>
-                                        <li>
-                                            Every Dafeis is absolutely unique
-                                            from others.
-                                        </li>
-                                        <li>
-                                            So make sure to keep a sharp eye on
-                                            your favorite DaFeis!
-                                        </li>
-                                    </ul>
-                                    <UiButton>Join Our Discord</UiButton>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* our story section end */}
-
-                {/* about mission section start */}
-                <section className="mission-box">
-                    <div className="container">
-                        <div className="row align-items-center justify-content-between">
-                            <div className="col-lg-6 mb-5 mb-lg-0">
-                                <div className="mission-left">
-                                    <p>Out Mission</p>
-                                    <h2>Concern About Our Mission</h2>
-                                    <p>
-                                        BBB is a collection of ERC-721
-                                        non-fungible tokens (NFT) on the
-                                        Ethereum (ETH) blockchain network.
-                                        Currently, we are set on creating 10,000
-                                        individual and unique tokens
-                                    </p>
-                                    <UiButton>Discord</UiButton>
-                                </div>
-                            </div>
-                            <div className="col-lg-5">
-                                <div className="mission-right">
-                                    <img
-                                        src={MissionImg}
-                                        alt="Mission Image"
-                                        className="w-100"
-                                    />
-                                    <div className="mission-right-overlay d-flex">
-                                        <img
-                                            src={MissionOverlay}
-                                            alt="Mission overly"
-                                        />
-                                        <div>
-                                            <h4>Our Mission</h4>
-                                            <p>
-                                                We can support you throughout
-                                                the journey from concept to
-                                                launch.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* about mission section end */}
 
                 {/* generate section start */}
                 <section className="generate-box">
@@ -394,6 +255,14 @@ function Home() {
                 </section>
                 {/* generate section end */}
 
+                {/* our story section start */}
+                <Story />
+                {/* our story section end */}
+
+                {/* mission section start */}
+                <Mission />
+                {/* mission section end */}
+
                 {/* roadmap section start */}
                 <section className="roadmap-box" id="road-map">
                     <div className="container">
@@ -402,9 +271,14 @@ function Home() {
                                 <div className="roadmap-head text-center">
                                     <h2>Road Map</h2>
                                     <p>
-                                        Discover our special legendary
-                                        collection, they are the rarest and
-                                        unique.
+                                        The Bread Basket Battalion Community
+                                        will be in the holders' hands meaning
+                                        you will control where the donation
+                                        funds will go with full transparency.
+                                        The devs will be vigorously vetting and
+                                        selecting a handful of charities the
+                                        community will be able to select from. 1
+                                        NFT = 1 Vote.
                                     </p>
                                 </div>
                             </div>
@@ -412,76 +286,94 @@ function Home() {
                         <div className="row justify-content-center">
                             <div className="col-lg-10 mb-5s">
                                 <div className="road-map-border">
-                                    <div className="roadmap-content-box text-center mx-auto">
-                                        <h4>Pre-ICO</h4>
+                                    <div className="roadmap-content-box text-center mx-auto rm-cb-1">
+                                        <h4>Community Comes First</h4>
                                         <p>
-                                            A new Events collection will be
-                                            created, where our artist Nack will
-                                            start drawing and minting limited
-                                            edition NFTs revolving around
-                                            Festivals and Key Events throughout
-                                            the year, which will be airdropped
-                                            to the owners of Fishbowl Heads.
+                                            Introducing Bread Basket Battalion.
+                                            A compassion-driven idea to fill a
+                                            meaningful gap in the NFT space,
+                                            committed to creating a vibrant Web3
+                                            community that is centered on
+                                            promoting peace, charity, and
+                                            humanitarian efforts throughout the
+                                            globe. Throughout the community
+                                            building phase, we will be doing
+                                            promotional giveaways of NFTs and
+                                            whitelist spots.
                                         </p>
                                     </div>
-                                    <div className="roadmap-content-box text-center mx-auto">
-                                        <h4>Cryptic ICO</h4>
+                                    <div className="roadmap-content-box text-center mx-auto rm-cb-2">
+                                        <h4>You CAN Do Something</h4>
                                         <p>
-                                            We’ll create a Community Wallet and
-                                            fund it with 2.7% of final primary
-                                            sale value, for securing a Metaverse
-                                            land parcel on a platform preferred
-                                            by the community. This land will be
-                                            used by the community to host events
-                                            and showcases among other things
-                                            that the community wants to build.
+                                            Yes, you can! This project bridges
+                                            the gap between the charity DAOs and
+                                            identical NFTs with what we have
+                                            coined as a “Humanitarian NFT”
+                                            collection project. Bread Basket
+                                            Battalion, or BBB, will be donating
+                                            50% of the project’s entire proceeds
+                                            to a non-profit organization that is
+                                            actively aiding those suffering in
+                                            Ukraine
+                                        </p>
+                                        <p>
+                                            This NFT provides real value through
+                                            a one-of-a-kind art collection. We
+                                            hope that the world will view this
+                                            project as a unique moment in
+                                            history in the NFT space - where we
+                                            used NFTs for good. The soldiers
+                                            will be collectible tokens from this
+                                            moment in time, representing the
+                                            brave men and women of Ukraine
+                                            committing their lives to defending
+                                            peace and freedom.
                                         </p>
                                     </div>
-                                    <div className="roadmap-content-box text-center mx-auto">
-                                        <h4>CHP launch on Cryptic</h4>
+                                    <div className="roadmap-content-box text-center mx-auto rm-cb-3">
+                                        <h4>Transparent Donation Process</h4>
                                         <p>
-                                            A new Collaborations collection will
-                                            be created and we’ll commence
-                                            collabs with other prominent NFT
-                                            artists and projects to create
-                                            limited edition derivatives, remixes
-                                            and mashups of Fishbowl Heads in
-                                            their unique style. These will be
-                                            claimable at 0 ETH + Gas only by the
-                                            owners of Fishbowl Heads through
-                                            raffles or contest rewards on our
-                                            Discord server.
+                                            The voting will commence shortly
+                                            after the public sale is launched.
+                                            Our team, most specifically, our
+                                            Charity + Donation Liaison, will be
+                                            properly vetting a handful of
+                                            charities and organizations that the
+                                            community will have the ability to
+                                            select from.
                                         </p>
                                     </div>
-                                    <div className="roadmap-content-box text-center mx-auto">
-                                        <h4>Cryptic Listed in Exchanges</h4>
+                                    <div className="roadmap-content-box text-center mx-auto rm-cb-4">
+                                        <h4>Merch</h4>
                                         <p>
-                                            We consider this NFT project like
-                                            any other venture, so believe that
-                                            the roadmap will continue to evolve
-                                            over time with inputs from the
-                                            community, including metaverse
-                                            initiatives, raffles, airdrops, meme
-                                            contests and more. Please join our
-                                            Discord server for updates and
-                                            participate in shaping our future
-                                            roadmap.
+                                            Flex your BBB merch with pride!
+                                            Through community engagement we will
+                                            be creating merchandise that
+                                            symbolizes solidarity with Ukraine.
+                                            The proceeds from these releases
+                                            will also be donated to charity. The
+                                            merch design will be placed in the
+                                            hands of the community and will be
+                                            decided through a voting process.
+                                            Holders will also receive discounts
+                                            for items in the shop, among other
+                                            perks.
                                         </p>
                                     </div>
-                                    <div className="roadmap-content-box text-center mx-auto">
-                                        <h4>Mobile Application</h4>
+                                    <div className="roadmap-content-box text-center mx-auto rm-cb-5">
+                                        <h4>Peace and Future Roadmaps</h4>
                                         <p>
-                                            A new Collaborations collection will
-                                            be created and we’ll commence
-                                            collabs with other prominent NFT
-                                            artists and projects to create
-                                            limited edition derivatives, remixes
-                                            and mashups of Fishbowl Heads in
-                                            their unique style. These will be
-                                            claimable at 0 ETH + Gas only by the
-                                            owners of Fishbowl Heads through
-                                            raffles or contest rewards on our
-                                            Discord server.
+                                            Our goal is to keep contributing to
+                                            this cause and we expect high ETH
+                                            volume! We want to continue to give
+                                            until peace is achieved in Ukraine.
+                                            After peace is resolved in Ukraine
+                                            (hopefully soon!) the community will
+                                            vote on where the additional
+                                            proceeds from secondary royalty fees
+                                            will be donated. It could continue
+                                            to be Ukraine or it could be another
+                                            cause that needs help.
                                         </p>
                                     </div>
                                     <RoadMap className="roadmap-bg" />
@@ -494,7 +386,7 @@ function Home() {
                 {/* roadmap section end */}
 
                 {/* read doc section start */}
-                <section className="doc-box">
+                {/* <section className="doc-box">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -552,7 +444,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* read doc section end */}
 
                 {/* difference section start */}
@@ -568,7 +460,7 @@ function Home() {
                 {/* faq section end */}
 
                 {/* discord section start */}
-                <Discord />
+                {/* <Discord /> */}
                 {/* discord section end */}
             </Layout>
         </>

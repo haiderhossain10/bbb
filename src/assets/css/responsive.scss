@@ -9,11 +9,20 @@
         display: block;
     }
 
+
+    .header-twitter {
+        height: 35px;
+        line-height: 35px !important;
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
     /* header nav end */
 
     /* banner section start */
     .banner-box {
-        height: 524px;
+        height: 600px;
         background-image: url('../img/mobile-banner-bg.png') !important;
     }
 
@@ -135,6 +144,24 @@
         }
     }
 
+    .story-content {
+        h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        .ui-btn {
+            height: 35px;
+            line-height: 35px;
+            font-size: 12px;
+        }
+    }
+
     /* our story section end */
 
     /* about mission section start */
@@ -189,6 +216,23 @@
         p {
             font-size: 8px;
             line-height: 12px;
+        }
+    }
+
+    .mission-content {
+        img {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: normal;
         }
     }
 
@@ -248,15 +292,16 @@
         }
     }
 
-    .roadmap-bg {
-        display: none;
-    }
-
     .roadmap-content-box {
         width: 287px;
         height: auto;
         padding: 20px;
         margin: 54px 0;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         h4 {
             font-size: 14px;
@@ -272,10 +317,44 @@
 
     .roadmap-mobile-bg {
         position: absolute;
-        top: -44px;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         z-index: -9;
+
+
+        svg {
+            height: 100%;
+        }
+    }
+
+    .rm-cb-1 {
+        top: 3.4rem;
+        height: 144px;
+    }
+
+    .rm-cb-2 {
+        top: 4.4rem;
+        height: 174px;
+    }
+
+    .rm-cb-3 {
+        top: 5.4rem;
+        height: 189px;
+    }
+
+    .rm-cb-4 {
+        top: 6.6rem;
+        height: 174px;
+    }
+
+    .rm-cb-5 {
+        top: 7.8rem;
+        height: 174px;
+    }
+
+    .roadmap-bg {
+        display: none;
     }
 
     /* roadmap section end */
@@ -341,6 +420,7 @@
 
     /* difference section start */
     .difference-box {
+        padding-top: 150px;
         padding-bottom: 70px;
     }
 
@@ -553,18 +633,13 @@
         top: -1vh;
     }
 
+    .roadmap-mobile-bg {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
-
-    /* header nav start */
-    // .header-container {
-    //     display: none !important;
-    // }
-
-    // .header-mobile-box {
-    //     display: none;
-    // }
 
     .story-left-icon {
         left: 0;
@@ -574,6 +649,7 @@
     .header-container-w {
         width: 90% !important;
     }
+
     .header-nav button,
     .header-nav a {
         font-size: 14px;
@@ -581,20 +657,10 @@
 
     .header-right nav,
     .header-left nav {
-        gap: 35px !important;
+        gap: 35px;
     }
 
+    .header-icon {
+        gap: 10px !important;
+    }
 }
-
-// @media (min-width: 1401px) and (max-width: 1520px) {
-
-//     /* header nav start */
-//     .header-container {
-//         display: none !important;
-//     }
-
-//     .header-mobile-box {
-//         display: block;
-//     }
-
-// }

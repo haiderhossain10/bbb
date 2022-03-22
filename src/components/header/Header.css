@@ -1,0 +1,155 @@
+.header-container {
+  background-color: #20242D;
+  height: 90px;
+  border-radius: 80px;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.header-nav a {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.header-left {
+  padding-left: 50px;
+  padding-right: 2rem;
+}
+.header-left nav {
+  gap: 70px;
+}
+.header-left nav a:hover {
+  color: #5151FF;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+.header-right nav {
+  gap: 50px;
+}
+.header-right nav a:hover {
+  color: #5151FF;
+}
+
+.header-container-w {
+  width: 1520px;
+}
+
+.header-icon {
+  gap: 1rem !important;
+}
+.header-icon a {
+  height: 46px;
+  width: 46px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+}
+.header-icon a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff !important;
+}
+
+.header-logo {
+  border: 8px solid #141822;
+  border-radius: 50%;
+}
+
+.header-twitter {
+  height: 54px;
+  width: 156px;
+  line-height: 54px !important;
+  text-align: center;
+  background-color: #5151FF;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  transition: all 0.3s;
+  margin-right: 1rem;
+}
+.header-twitter:hover {
+  background-color: #3636ec;
+  color: #FFFFFF;
+}
+
+.header-mobile-box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 24px 0;
+  border-bottom: 1px solid #585858;
+  z-index: 999;
+}
+
+.header-mobile-logo img {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-mobile-handburger {
+  width: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.header-mobile-handburger span {
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.header-mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1C202A;
+  height: 100vh;
+  padding: 24px;
+}
+.header-mobile-nav .header-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+.header-mobile-nav .header-mobile-menu a {
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.header-mobile-nav .header-mobile-menu a:hover {
+  color: #F1F151;
+}
+.header-mobile-nav .header-mobile-menu button {
+  font-size: 16px;
+  height: 35px;
+  width: 200px;
+}
+
+.header-mobile-cross {
+  position: absolute;
+  top: 1rem;
+  right: 12px;
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */
